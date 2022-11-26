@@ -24,90 +24,98 @@
   <body>
     <!-- HEADER -->
     <header class="page-header">
-      <div class="container flex">
+      <div class="page-header__wrap container">
         <nav>
-          <ul class="nav">
-            <li class="item-logo">
-              <a href="index.html" class="logo"
-                ><span class="logo-part">Web</span>Studio</a
-              >
+          <ul class="page-header__nav">
+            <li class="page-header__logo">
+              <a class="logo page-header__logo--color" href="./index.html">
+                <span class="logo__part">Web</span>Studio
+              </a>
             </li>
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            <li class="page-header__reference">
+              <a class="page-header__link" href="./index.html">Студія</a>
             </li>
-            <li class="item"><a href="" class="link">Контакти</a></li>
+            <li class="page-header__reference">
+              <a class="page-header__link page-header__link--current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="page-header__reference">
+              <a class="page-header__link" href="">Контакти</a>
+            </li>
           </ul>
         </nav>
-        <ul class="contacts">
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg class="icon-mail" width="18" height="16">
-                <use href="./images/icons.svg#icon-link-letter"></use></svg>info@devstudio.com</a>
+        <ul class="page-header__contacts">
+          <li class="page-header__reference">
+            <a class="page-header__link" href="mailto:info@devstudio.com">
+              <svg class="page-header__icon" width="18" height="16">
+                <use href="./images/icons.svg#icon-link-letter"></use>
+              </svg>info@devstudio.com
+            </a>
           </li>
-          <li class="item">
-            <a class="link" href="tel:+380961111111">
-              <svg class="icon-cell" width="10" height="16">
-                <use href="./images/icons.svg#icon-link-smartphone"></use></svg>+38 096 111 11 11</a>
+          <li class="page-header__reference">
+            <a class="page-header__link" href="tel:+380961111111">
+              <svg class="page-header__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-link-smartphone"></use>
+              </svg>+38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
     </header>
     <main>
       <!-- ФІЛЬТР КНОПОК -->
-      <section class="port section">
+      <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
-          <ul class="port-buttons">
-            <li class="button-item">
-              <button class="filter-button" type="button">Усі</button>
+          <ul class="portfolio-filter">
+            <li class="portfolio-filter__item">
+              <button class="portfolio-filter__button" type="button">Усі</button>
             </li>
-            <li class="button-item">
-              <button class="filter-button" type="button">Веб-сайти</button>
+            <li class="portfolio-filter__item">
+              <button class="portfolio-filter__button" type="button">Веб-сайти</button>
             </li>
-            <li class="button-item">
-              <button class="filter-button" type="button">Додатки</button>
+            <li class="portfolio-filter__item">
+              <button class="portfolio-filter__button" type="button">Додатки</button>
             </li>
-            <li class="button-item">
-              <button class="filter-button" type="button">Дизайн</button>
+            <li class="portfolio-filter__item">
+              <button class="portfolio-filter__button" type="button">Дизайн</button>
             </li>
-            <li class="button-item">
-              <button class="filter-button" type="button">Маркетинг</button>
+            <li class="portfolio-filter__item">
+              <button class="portfolio-filter__button" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="port-filter">
-            <li class="port-card">
-              <a class="port-link" href="#">
-                <div class="picture">
+          <ul class="portfolio">
+            <li class="portfolio__card">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__picture">
                   <img
                   src="./images/portfolio/technokrjak.jpg"
                   alt="Зображення сторінки інтернета"
                   width="370"
                   height="294">
-                <div class="card-description">
-                  <p class="description-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
+                  <div class="portfolio__wrap">
+                    <p class="portfolio__description">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну особу.
+                    </p>
+                  </div>
                 </div>
-                </div>
-                <div class="card-text">
-                  <h2 class="port-filter-title">Технокряк</h2>
+                <div class="portfolio__name">
+                  <h2 class="portfolio__title">Технокряк</h2>
                   <p>Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="port-card">
-              <a href="#" class="port-link">
-                <div class="picture">
+            <li class="portfolio__card">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__picture">
                   <img
                   src="./images/portfolio/basketball.jpg"
                   alt="Баскетболісти з м'ячем"
                   width="370"
                   height="294">
-                  <div class="card-description">
-                    <p class="description-text">
+                  <div class="portfolio__wrap">
+                    <p class="portfolio__description">
                       Постер НБА Нью-Орлеан проти Сан Франциско Голден Стар. Тут
                       має бути інший текст, якого не має в проекті, але я його
                       написав, щоб перевірити і побачити, як він буде
@@ -115,70 +123,70 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-text">
-                  <h2 class="port-filter-title">
+                <div class="portfolio__name">
+                  <h2 class="portfolio__title">
                     Постер New Orlean vs Golden Star
                   </h2>
                   <p>Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="port-card">
-              <a href="#" class="port-link">
-                <div class="picture">
+            <li class="portfolio__card">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__picture">
                   <img
                     src="./images/portfolio/seafood.jpg"
                     alt="Логотип рибного ресторану"
                     width="370"
                     height="294"
                   />
-                  <div class="card-description">
-                    <p class="description-text">
+                  <div class="portfolio__wrap">
+                    <p class="portfolio__description">
                       Тут про застосунок для ресторану Сіфуд. Далі вода про те
                       який класний ресторан і який ще більш чудовий застосунок
                       розроблений нашою вебстудією)
                     </p>
                   </div>
                 </div>
-                <div class="card-text">
-                  <h2 class="port-filter-title">Ресторан Seafood</h2>
+                <div class="portfolio__name">
+                  <h2 class="portfolio__title">Ресторан Seafood</h2>
                   <p>Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="port-card">
-              <a href="#" class="port-link">
-                <div class="picture">
+            <li class="portfolio__card">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__picture">
                   <img
                     src="./images/portfolio/prime.jpg"
                     alt="Навушники"
                     width="370"
                     height="294"
                   />
-                  <div class="card-description">
-                    <p class="description-text">
+                  <div class="portfolio__wrap">
+                    <p class="portfolio__description">
                       Навушники. Ми самі не уявляємо чому. Виглядає стильно і
                      сучасно, то й добре. Але щось пов'язане з маркетингом.
                     </p>
                   </div>
                 </div>
-                <div class="card-text">
-                  <h2 class="port-filter-title">Проєкт Prime</h2>
+                <div class="portfolio__name">
+                  <h2 class="portfolio__title">Проєкт Prime</h2>
                   <p>Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="port-card">
-              <a href="#" class="port-link">
-                <div class="picture">
+            <li class="portfolio__card">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__picture">
                   <img
                     src="./images/portfolio/boxes.jpg"
                     alt="Дві коробки"
                     width="370"
                     height="294"
                   />
-                  <div class="card-description">
-                    <p class="description-text">
+                  <div class="portfolio__wrap">
+                    <p class="portfolio__description">
                       Застосунок, де на обкладинці красиво
                       розташовані вінтажні коробки. Власне, така й назва. Щось схоже на тетріс.
                       Просто знайте, що наша ВебСтудія втілить в життя будь яку
@@ -186,46 +194,46 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-text">
-                  <h2 class="port-filter-title">Проєкт Boxes</h2>
+                <div class="portfolio__name">
+                  <h2 class="portfolio__title">Проєкт Boxes</h2>
                   <p>Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="port-card">
-              <a href="#" class="port-link">
-                <div class="picture">
+            <li class="portfolio__card">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__picture">
                   <img
                     src="./images/portfolio/inspiration.jpg"
                     alt="Монітор"
                     width="370"
                     height="294"
                   />
-                  <div class="card-description">
-                    <p class="description-text">
+                  <div class="portfolio__wrap">
+                    <p class="portfolio__description">
                       Веб-сайт "Надхнення немає меж". Філософське. Мабуть, сайт
                       для тих, хто має багато натхнення, але не знає де його
                       втілити. Вам сюди
                     </p>
                   </div>
                 </div>
-                <div class="card-text">
-                  <h2 class="port-filter-title">Inspiration has no Borders</h2>
+                <div class="portfolio__name">
+                  <h2 class="portfolio__title">Inspiration has no Borders</h2>
                   <p>Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="port-card">
-              <a href="#" class="port-link">
-                <div class="picture">
+            <li class="portfolio__card">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__picture">
                   <img
                     src="./images/portfolio/limited.jpg"
                     alt="Журнал на сторінці з заголовком I'm limited edition"
                     width="370"
                     height="294"
                   />
-                  <div class="card-description">
-                    <p class="description-text">
+                  <div class="portfolio__wrap">
+                    <p class="portfolio__description">
                       О. Тут круто. Нам довірили розробити дизайн лімітованої
                       обкладинки одного невідомого журналу. Щось про фени або про
                       волосся. Видання лімітоване, то ж навряд чи ви він потрапить у
@@ -233,53 +241,53 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-text">
-                  <h2 class="port-filter-title">Видання Limited Edition</h2>
+                <div class="portfolio__name">
+                  <h2 class="portfolio__title">Видання Limited Edition</h2>
                   <p>Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="port-card">
-              <a href="#" class="port-link">
-                <div class="picture">
+            <li class="portfolio__card">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__picture">
                   <img
                     src="./images/portfolio/lab.jpg"
                     alt="Label TAG"
                     width="370"
                     height="294"
                   />
-                  <div class="card-description">
-                    <p class="description-text">
+                  <div class="portfolio__wrap">
+                    <p class="portfolio__description">
                       Проект ЛАБ. Це знов ніби не зрозуміло, але назва кричуща
                       і модна. Все дуже красиво, особливо нам подобається
                       той шнурочок і стильний вузлик.
                     </p>
                   </div>
                 </div>
-                <div class="card-text">
-                  <h2 class="port-filter-title">Проєкт LAB</h2>
+                <div class="portfolio__name">
+                  <h2 class="portfolio__title">Проєкт LAB</h2>
                   <p>Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="port-card">
-              <a href="#" class="port-link">
-                <div class="picture">
+            <li class="portfolio__card">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__picture">
                   <img
                     src="./images/portfolio/business.jpg"
                     alt="Фото лептопа з надписом Growing Business на мониторі"
                     width="370"
                     height="294"
                   />
-                  <div class="card-description">
-                    <p class="description-text">
+                  <div class="portfolio__wrap">
+                    <p class="portfolio__description">
                       Бізнес застосунок. Зростаючий бізнес. Для серйозних людей,
                       які знають ціну своєму часу. Якось так.
                     </p>
                   </div>
                 </div>
-                <div class="card-text">
-                  <h2 class="port-filter-title">Growing Business</h2>
+                <div class="portfolio__name">
+                  <h2 class="portfolio__title">Growing Business</h2>
                   <p>Додаток</p>
                 </div>
               </a>
@@ -290,63 +298,57 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="foot">
-      <div class="container basement">
-        <div class="basement-links">
-          <a href="index.html" class="logo-foot"
-            ><span class="logo-part">Web</span>Studio</a
-          >
+    <footer class="page-footer">
+      <div class="container page-footer__wrap">
+        <div class="page-footer__links">
+          <a href="index.html" class="logo page-footer__logo--color">
+            <span class="logo__part">Web</span>Studio
+          </a>
           <address>
             <ul class="adress-list">
-              <li class="adress-item">
-                <a
+              <li class="adress-list__item">
+                <a class="adress-list__map"
                   href="https://goo.gl/maps/ySmGjcdxqGTYYULQ9"
-                  class="adress-map"
                   target="_blank"
-                  rel="noreferrer noopener nofollow"
-                  >м. Київ, пр-т Лесі Українки, 26
+                  rel="noreferrer noopener nofollow">м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
-              <li class="adress-item">
-                <a href="mailto:info@devstudio.com" class="adress-link"
-                  >info@devstudio.com</a
-                >
+              <li class="adress-list__item">
+                <a class="adress-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li class="adress-item">
-                <a href="tel:+380961111111" class="adress-link"
-                  >+38 096 111 11 11</a
-                >
+              <li class="adress-list__item">
+                <a class="adress-list__link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="join">
-          <h3 class="join-title">приєднуйтесь</h3>
-          <ul class="join-list">
+          <h3 class="join__title">приєднуйтесь</h3>
+          <ul class="networks">
             <li>
-              <a class="join-links" href="#" aria-label="Instagram">
-                <svg class="join-icon" width="20" height="20">
+              <a class="networks__button join__button--color" href="#" aria-label="Instagram">
+                <svg class="networks__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-social-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="join-links" href="#" aria-label="Instagram">
-                <svg class="join-icon" width="20" height="20">
+              <a class="networks__button join__button--color" href="#" aria-label="Instagram">
+                <svg class="networks__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-social-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="join-links" href="#" aria-label="Instagram">
-                <svg class="join-icon" width="20" height="20">
+              <a class="networks__button join__button--color" href="#" aria-label="Instagram">
+                <svg class="networks__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-social-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="join-links" href="#" aria-label="Instagram">
-                <svg class="join-icon" width="20" height="20">
+              <a class="networks__button join__button--color" href="#" aria-label="Instagram">
+                <svg class="networks__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-social-linkedin"></use>
                 </svg>
               </a>
@@ -354,18 +356,20 @@
           </ul>
         </div>
         <form name="mailing-list" autocomplete="on">
-          <div class="email-list">
-            <h3 class="join-title">Підпишіться на розсилку</h3>
-            <div class="email-list-form">
-              <label class="email-label">
-                <input class="email-input"
+          <div class="subscription">
+            <h3 class="join__title">Підпишіться на розсилку</h3>
+            <div class="subscription__wrap">
+              <label>
+                <input
+                  class="subscription__input"
                   type="email"
                   name="user_email"
                   placeholder="E-mail"
                 />
               </label>
-              <button class="sign-up-button" type="submit">Підписатися
-                <svg class="sign-up-icon" width="24" height="24">
+              <button class="subscription__button" type="submit">
+                Підписатися
+                <svg class="subscription__icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
